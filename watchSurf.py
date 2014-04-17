@@ -60,8 +60,8 @@ for l in r:
 		todayrating = toStars(today["solidRating"])
 		tomorrowrating = toStars(tomorrow["solidRating"])
 
-		todaystr = "Today {}-{}ft {} {}{}".format(today["swell"]["minBreakingHeight"],today["swell"]["maxBreakingHeight"],todayrating,today["wind"]["speed"],today["wind"]["unit"])
-		tomorrowstr = "Manana {}-{}ft {} {}{}".format(tomorrow["swell"]["minBreakingHeight"],tomorrow["swell"]["maxBreakingHeight"],tomorrowrating,tomorrow["wind"]["speed"],tomorrow["wind"]["unit"])
+		todaystr = "Now {}-{}ft {} {}{}".format(today["swell"]["minBreakingHeight"],today["swell"]["maxBreakingHeight"],todayrating,today["wind"]["speed"],today["wind"]["unit"])
+		tomorrowstr = "Later {}-{}ft {} {}{}".format(tomorrow["swell"]["minBreakingHeight"],tomorrow["swell"]["maxBreakingHeight"],tomorrowrating,tomorrow["wind"]["speed"],tomorrow["wind"]["unit"])
 		
 		updatestr =  "{}/{}/{}/{}".format(spotName,todaystr,tomorrowstr,time)
 		postparams['args'] = updatestr
