@@ -53,7 +53,7 @@ for l in r:
 		spotName = spotID
 
 
-		time = datetime.datetime.now(pytz.timezone("America/New_York")).strftime("%m-%d-%Y at %R:%M")
+		time = datetime.datetime.now(pytz.timezone("America/New_York")).strftime("%m-%d-%Y %H:%M")
 
 		today = ms[4]
 		tomorrow = ms[12]
